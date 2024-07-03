@@ -1,0 +1,54 @@
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Información de contacto en el header de la página */
+
+.top-info-ctn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    color: black;
+    background-color: bisque;
+}
+
+.top-info-left, .top-info-right {
+    display: flex;
+    gap: 15px;
+    background-color: bisque;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+}
+
+/* FIN Información de contacto */
+
+/* Logo y botones principales */
+
+.head-tools {
+    display: flex;
+    justify-content: center;
+    gap: 44px;
+}
+
+.logo-ctn {
+    display: flex;
+    gap: 15px;
+}
+
+.iconosFooter
+{
+  margin-right: 10px;
+  margin-top: 5px;
+  width: 25px;
+  /* float: left; /*                /* Coloca el elemento a la izquierda de todo */
+}
+
+.buttons-ctn {
+    display: flex;
+    gap: 15px;
+}
