@@ -3,30 +3,6 @@ header {
     flex-direction: column;
 }
 
-/* Información de contacto en el header de la página */
-
-.top-info-ctn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 45px;
-    color: black;
-    background-color: bisque;
-}
-
-.top-info-left, .top-info-right {
-    display: flex;
-    gap: 15px;
-    background-color: bisque;
-}
-
-.info {
-    display: flex;
-    flex-direction: row;
-}
-
-/* FIN Información de contacto */
-
 /* Logo y botones principales */
 
 .head-tools {

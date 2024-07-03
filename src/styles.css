@@ -3,10 +3,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
+}
+
+html, body {
+  height: 100vh; /* Centras la página evitando scrolls innecesarios */
 }
 
 body
 {
+  margin: 0;
   font-family: 'Roboto', sans-serif;
   color: #33353a;
   /* margin-bottom: 90px; */ /* Quizás sirva para el footer */
