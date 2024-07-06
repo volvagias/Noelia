@@ -8,7 +8,10 @@ header {
 .head-tools {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 65px;
     gap: 44px;
+    background-color: #2f3647;
 }
 
 .logo-ctn {
@@ -16,15 +19,11 @@ header {
     gap: 15px;
 }
 
-.iconosFooter
-{
-  margin-right: 10px;
-  margin-top: 5px;
-  width: 25px;
-  /* float: left; /*                /* Coloca el elemento a la izquierda de todo */
-}
-
 .buttons-ctn {
     display: flex;
-    gap: 15px;
+    gap: 40px;
+}
+
+.buttons-ctn button {
+    padding: 0 5px 0 5px;
 }

@@ -1,12 +1,15 @@
-/* Información de contacto en el header de la página */
+p {
+    margin: 0;
+}
 
+/* Información de contacto en el header de la página */
 .top-info-ctn {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 45px;
+    gap: 100px;
     color: black;
-    background-color: bisque;
 }
 
 .top-info-left, .top-info-right {
@@ -17,6 +20,15 @@
 .info {
     display: flex;
     flex-direction: row;
+}
+
+.info a {
+    padding: 5px;
+}
+
+.bi-instagram, .bi-facebook {
+    color: black;
+    font-size: 20px;
 }
 
 /* FIN Información de contacto */
