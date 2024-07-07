@@ -7,7 +7,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45px;
+    height: 34px;
     gap: 100px;
     color: black;
 }
