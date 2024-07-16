@@ -36,7 +36,8 @@
 
 .home-areas-btn {
     background-color: white;
-    color: #000000c2;
+    color: #000000ab;
+    transition: all 0.05s ease;
 }
 
 .buttons-ctn .home-areas-btn:hover {
@@ -46,7 +47,8 @@
 .contact-btn {
     background-color: #e5bb8c;
     color: white;
-    border-radius: 13px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
 }
 
 .contact-btn:hover {

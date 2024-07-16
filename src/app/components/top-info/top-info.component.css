@@ -11,6 +11,7 @@ p {
     gap: 100px;
     color: black;
     border-bottom: 2.9px solid #0000001a;
+    white-space: nowrap;
 }
 
 .top-info-left, .top-info-right {
