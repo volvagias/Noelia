@@ -17,7 +17,14 @@ body
   margin: 0;
   font-family: 'Roboto', sans-serif;
   color: #33353a;
+  overflow-x: auto;
+  overflow-y: auto;
+  font-family: 'Georgia', serif;
   /* margin-bottom: 90px; */ /* Quizás sirva para el footer */
+}
+
+button {
+  font-family: 'Georgia', serif;
 }
 
 
