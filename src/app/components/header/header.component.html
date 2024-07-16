@@ -4,9 +4,9 @@
             <img src="/assets/img/logo-ppal.svg" alt="Bruzzese-Noelia">
         </div>
         <div class="buttons-ctn">
-            <button class="home-areas-btn">INICIO</button>
+            <button [routerLink]="'/home'" class="home-areas-btn">INICIO</button>
             <button class="home-areas-btn">ÁREAS</button>
-            <button class="contact-btn">CONTACTO</button>
+            <button (click)="navigateToSendEmail()" class="contact-btn">CONTACTO</button>
         </div>
     </div>
 </header>
