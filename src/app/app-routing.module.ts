@@ -7,10 +7,10 @@ const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', 
     component: HomeComponent,
-    // children: [
-    //   { path: 'top-info', component: TopInfoComponent }
+    children: [
+    { path: 'top-info', component: TopInfoComponent }
     //   otras rutas hijas aquí
-    // ]
+    ]
   },
   // Otras rutas principales aquí
 ];
