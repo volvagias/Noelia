@@ -3,7 +3,7 @@
         <img src="/assets/img/logo-ppal.svg" alt="Bruzzese-Noelia">
     </div>
 
-    <form>
+    <form [formGroup]="form" (submit)="sendEmail()">
         <div style="display: flex; justify-content: center;">
             <p>REALIZÁ TU CONSULTA</p>
         </div>
@@ -34,7 +34,7 @@
         <br>
         
         <div class="send-btn-ctn">
-            <button>ENVIAR</button>
+            <button type="submit">ENVIAR</button>
         </div>    
     </form>
     

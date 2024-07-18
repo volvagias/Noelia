@@ -12,6 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { SendEmailComponent } from './pages/send-email/send-email.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SendEmailComponent } from './pages/send-email/send-email.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatIconModule
+    MatIconModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration(),
