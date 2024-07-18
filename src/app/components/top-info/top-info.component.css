@@ -2,6 +2,10 @@ p {
     margin: 0;
 }
 
+mat-icon {
+    color: #2f3647;
+}
+
 /* Información de contacto en el header de la página */
 .top-info-ctn {
     display: flex;
@@ -29,7 +33,7 @@ p {
 }
 
 .bi-instagram, .bi-facebook {
-    color: black;
+    color: #2f3647;
     font-size: 20px;
 }
 

@@ -5,12 +5,12 @@ footer {
 
     gap: 16px;
     position: relative;
-    bottom: 0;              /* footer abajo de todo */
+    bottom: 0;              
     width: 100%;
     z-index: 999;
     padding: 17px 15px;
+    margin: 0;
     text-align: center;
-    margin-top: 15px;
 
     color: white;
     font-size: 13.6px;
