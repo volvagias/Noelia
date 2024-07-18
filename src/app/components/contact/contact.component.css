@@ -79,6 +79,15 @@ form p {
     border: 2px solid #e5bb8c;
 }
 
+.input-message {
+    margin-top: 4px;
+    width: max-content;
+    background-color: #2f3647;
+    padding: 0 6px 0 6px;
+    color: white;
+    border-radius: 6px;
+}
+
 .send-btn-ctn {
     display: flex;
     justify-content: flex-end;
