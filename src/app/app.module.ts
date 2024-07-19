@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { SendEmailComponent } from './pages/send-email/send-email.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     TopInfoComponent,
     FooterComponent,
     ContactComponent,
-    SendEmailComponent
+    SendEmailComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
