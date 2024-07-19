@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.slider-frame {
+    height: auto;
+    /* margin: 50px auto 0; */
+    overflow: hidden;
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 300%; /* porque son 3 imagenes */
+    animation: slide 22s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+    width: 100%;
+    padding: 30px;
+    list-style: none;   
+}
+
+.slider-frame img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {margin-left: 0%;}
+    30% {margin-left: 0%;}
+    
+    35% {margin-left: -100%;}
+    65% {margin-left: -100%;}
+
+    70% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+}
