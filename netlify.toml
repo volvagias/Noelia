@@ -1,5 +1,5 @@
 [build]
-  publish = "dist/tu-nombre-de-app"
+  publish = "dist/noe-estudio"
   functions = "functions"
 
 [[redirects]]
