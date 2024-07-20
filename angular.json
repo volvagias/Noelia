@@ -41,11 +41,7 @@
                 "input": "src/app/assets",
                 "output": "/assets/"
               },
-              {
-                "glob": "_redirects",
-                "input": "src",
-                "output": "/"
-              }
+              "src/_redirects"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/azure-blue.css",
