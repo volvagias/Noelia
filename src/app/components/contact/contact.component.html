@@ -1,0 +1,55 @@
+<div class="form-ctn">
+    <div class="logo-ctn">
+        <img src="/assets/img/logo-ppal.svg" alt="Bruzzese-Noelia">
+    </div>
+
+    <form [formGroup]="form" (submit)="sendEmail()">
+        <div style="display: flex; justify-content: center;">
+            <p>REALIZÁ TU CONSULTA</p>
+        </div>
+
+        <br>
+
+        <div class="input-ctn">
+            <input formControlName="name" name="name" type="text" placeholder="Nombre Completo">    
+        </div>
+        <div class="input-message" *ngIf="name?.invalid && (name?.touched || name?.dirty)">
+            <small *ngIf="name?.errors?.['required']">Nombre requerido.</small>
+        </div>
+
+        <br>
+
+        <div class="input-ctn">
+            <input formControlName="email" name="email" type="text" placeholder="Correo Electrónico">    
+        </div>
+        <div class="input-message" *ngIf="email?.invalid && (email?.touched || email?.dirty)">
+            <small *ngIf="email?.errors?.['required'] || email?.errors?.['email']">Email inválido.</small>
+        </div>
+
+        <br>
+
+        <div class="input-ctn">
+            <input formControlName="phone" name="phone" type="text" placeholder="N° de Teléfono">    
+        </div>
+        <div class="input-message" *ngIf="phone?.invalid && (phone?.touched || phone?.dirty)">
+            <small *ngIf="phone?.errors?.['required']">Campo obligatorio.</small>
+            <small *ngIf="phone?.errors?.['numericValidator']">Sólo se permiten números.</small>
+        </div>
+
+        <br>
+
+        <div class="input-ctn">
+            <textarea formControlName="message" name="message" placeholder="Consulta"></textarea>
+        </div>
+        <div class="input-message" *ngIf="message?.invalid && (message?.touched || message?.dirty)">
+            <small *ngIf="message?.errors?.['required']">Debe escribir su consulta.</small>
+        </div>   
+
+        <br>
+        
+        <div class="send-btn-ctn">
+            <button type="submit">ENVIAR</button>
+        </div>    
+    </form>
+    
+</div>

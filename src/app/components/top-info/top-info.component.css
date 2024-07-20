@@ -1,0 +1,46 @@
+p {
+    margin: 0;
+}
+
+mat-icon {
+    color: #2f3647;
+}
+
+/* Información de contacto en el header de la página */
+.top-info-ctn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34px;
+    gap: 100px;
+    color: black;
+    border-bottom: 2.9px solid #0000001a;
+    white-space: nowrap;
+}
+
+.top-info-left, .top-info-right {
+    display: flex;
+    gap: 15px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+}
+
+.info a {
+    padding: 5px;
+}
+
+.bi-instagram, .bi-facebook {
+    color: #2f3647;
+    font-size: 20px;
+}
+
+/* FIN Información de contacto */
+
+@media (max-width: 700px) {
+    .top-info-ctn {
+        display: none;
+    }
+}

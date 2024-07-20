@@ -1,0 +1,12 @@
+<header>
+    <div class="head-tools">
+        <div class="logo-ctn">
+            <img [routerLink]="'/home'" src="/assets/img/logo-ppal.svg" alt="Bruzzese-Noelia">
+        </div>
+        <div class="buttons-ctn">
+            <button [routerLink]="'/home'" class="home-areas-btn">INICIO</button>
+            <button class="home-areas-btn">ÁREAS</button>
+            <button (click)="navigateToSendEmail()" class="contact-btn">CONTACTO</button>
+        </div>
+    </div>
+</header>

@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+html, body {
+  height: 100vh; /* Centras la página evitando scrolls innecesarios */
+}
+
+body
+{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #33353a;
+  overflow-x: auto;
+  overflow-y: auto;
+  font-family: 'Georgia', serif;
+  /* margin-bottom: 90px; */ /* Quizás sirva para el footer */
+}
+
+button {
+  font-family: 'Georgia', serif;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
