@@ -150,7 +150,7 @@ form p {
     }
 }
 
-/* TABLETS */
+/* TABLET */
 
 @media (min-width:701px) and (max-width: 1050px) {
     .form-ctn {
