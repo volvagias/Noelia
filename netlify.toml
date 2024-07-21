@@ -3,6 +3,6 @@
   command = "npm run build"
 
 [[redirects]]
-  from = "https://bruzzeseyasociados.netlify.app"
-  to = "https://bruzzeseyasociados.netlify.app/home"
+  from = "/"
+  to = "/home"
   status = 301
