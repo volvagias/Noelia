@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, AbstractControl, ValidationErrors } from '@angular/forms'; /* AbstractControl, ValidationErrors sirven para el validator del phone */
+import emailjs from '@emailjs/browser'; /* Para usar el envío de email (previamente instale el paquete de emailJS */
 
 @Component({
   selector: 'app-contact',
@@ -49,13 +50,22 @@ export class ContactComponent {
   }
 
   /* Función para enviar emails */ 
-  sendEmail() {
+   async sendEmail() {
     if (this.form.invalid) {
-      prompt('Datos incorrectos en el formulario');
+      prompt('Datos incompletos o incorrectos.');
     } else {
-      prompt('Datos enviados, prueba');
+      emailjs.init('94i5NU6N3xpeSwrO0'); // Inicializa emailjs con tu usuario ID
+      let response = await emailjs.send("service_evsmi8f","template_h343t1r",{   // Espera la respuesta de emailjs.send
+        name: this.form.value.name,
+        email: this.form.value.email,
+        phone: this.form.value.phone,
+        message: this.form.value.message,
+      });
+
+      prompt('Su consulta ha sido enviada.');
       this.form.reset();
     }
   }
+  /* async y await se utilizan para manejar el envío del correo electrónico de manera asíncrona y esperar la respuesta de emailjs.send antes de proceder con el siguiente código. */
 
 }
