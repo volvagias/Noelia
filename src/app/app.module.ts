@@ -14,6 +14,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { SendEmailComponent } from './pages/send-email/send-email.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { AreasComponent } from './components/areas/areas.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     FooterComponent,
     ContactComponent,
     SendEmailComponent,
-    CarouselComponent
+    CarouselComponent,
+    AreasComponent
   ],
   imports: [
     BrowserModule,
