@@ -30,7 +30,7 @@ p {
     display: flex;
     justify-content: center;
     gap: 45px;
-    padding: 5px 45px 45px 45px;
+    padding: 25px 45px 45px 45px;
 }
 
 .card h2 {
