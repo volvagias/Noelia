@@ -3,7 +3,7 @@
         <img src="/assets/img/logo-ppal.svg" alt="Bruzzese-Noelia">
     </div>
 
-    <form [formGroup]="form" (submit)="sendEmail()">
+    <form action="javascript:void(0)" [formGroup]="form" (submit)="sendEmail()"> <!--"javascript:void(0)" evita que se recargue la página al enviar el formulario-->
         <div style="display: flex; justify-content: center;">
             <p>REALIZÁ TU CONSULTA</p>
         </div>
