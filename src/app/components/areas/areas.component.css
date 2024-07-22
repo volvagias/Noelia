@@ -11,13 +11,26 @@ h2 {
 
 p {
     margin: 0;
+    overflow: auto;
+    max-height: 120px;
+}
+
+.h2-ctn {
+    display: flex;
+    justify-content: center;
+    background-color: #2f3647;
+    margin-bottom: 45px;
+}
+
+.h2-ctn h2 {
+    color: white;
 }
 
 .ctn {
     display: flex;
     justify-content: center;
     gap: 45px;
-    padding: 0 45px 45px 45px;
+    padding: 5px 45px 45px 45px;
 }
 
 .card h2 {
@@ -32,8 +45,9 @@ p {
     width: 350px;
     height: 300px;
     padding: 35px;
-    border: 2px solid black;
     border-radius: 6px;
+    background-color: white;
+    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.15);
 }
 
 .btn-ctn {
