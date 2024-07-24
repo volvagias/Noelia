@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, AbstractControl, ValidationErrors } from '@angular/forms'; /* AbstractControl, ValidationErrors sirven para el validator del phone */
 import emailjs from '@emailjs/browser'; /* Para usar el envío de email (previamente instale el paquete de emailJS */
+import Swal from 'sweetalert2';
+
 
 @Component({
   selector: 'app-contact',
@@ -52,7 +54,13 @@ export class ContactComponent {
   /* Función para enviar emails */ 
    async sendEmail() {
     if (this.form.invalid) {
-      prompt('Datos incompletos o incorrectos.');
+      Swal.fire({
+        icon: "error",
+        title: "No se ha podido enviar su consulta.",
+        text: "Datos incompletos o incorrectos.",
+        confirmButtonText: 'ACEPTAR',
+        /* Los estilos los puse en el style general para que funcionen */
+      });
     } else {
       emailjs.init('94i5NU6N3xpeSwrO0'); // Inicializa emailjs con tu usuario ID
       let response = await emailjs.send("service_evsmi8f","template_h343t1r",{   // Espera la respuesta de emailjs.send

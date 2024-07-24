@@ -31,3 +31,32 @@ button {
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+
+/******* SweetAlert2 *******/
+
+/* Popup Datos Incorrectos */
+.swal2-container .swal2-popup .swal2-icon.swal2-error {
+  border-color: #e5bb8c;
+  background-color: #e5bb8c; 
+}
+
+.swal2-error .swal2-x-mark [class^=swal2-x-mark-line] {
+  background-color: white;
+}
+
+.mat-display-medium, .mat-typography .mat-display-medium, .mat-typography h2 {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.swal2-actions button {
+  width: 101px;
+  height: 35px;
+  padding: 0 5px 0 5px;
+  background-color: #e5bb8c;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border-radius: 6px;
+}
