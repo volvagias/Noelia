@@ -62,6 +62,15 @@ export class ContactComponent {
         /* Los estilos los puse en el style general para que funcionen */
       });
     } else {
+      Swal.fire({
+        title: 'Enviando...',
+        text: 'Por favor, espere un momento.',
+        allowOutsideClick: false,
+        didOpen: () => {
+          Swal.showLoading();
+        }
+      });
+
       emailjs.init('94i5NU6N3xpeSwrO0'); // Inicializa emailjs con tu usuario ID
       let response = await emailjs.send("service_evsmi8f","template_h343t1r",{   // Espera la respuesta de emailjs.send
         name: this.form.value.name,
@@ -69,8 +78,14 @@ export class ContactComponent {
         phone: this.form.value.phone,
         message: this.form.value.message,
       });
+      
+      Swal.fire({
+        icon: "success",
+        title: "Su consulta ha sido enviada.",
+        confirmButtonText: 'ACEPTAR'
+        /* Los estilos los puse en el style general para que funcionen */
+      });
 
-      prompt('Su consulta ha sido enviada.');
       this.form.reset();
     }
   }

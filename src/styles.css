@@ -60,3 +60,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   font-weight: bold;
   border-radius: 6px;
 }
+
+@media (max-width: 700px) {
+  .mat-display-medium, .mat-typography .mat-display-medium, .mat-typography h2 {
+    font-size: 20px;
+  }
+}
+/* FIN Popup Datos Incorrectos */
