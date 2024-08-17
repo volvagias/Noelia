@@ -4,8 +4,8 @@ footer {
     align-items: center;
 
     gap: 16px;
-    position: relative;
-    bottom: 0;              
+    position: sticky;       /* position sticky y top 100 para acomodar siempre abajo de todo */
+    top: 100%;             
     width: 100%;
     z-index: 999;
     padding: 17px 15px;
