@@ -19,10 +19,29 @@ footer {
 
 p {
     margin: 0;
+    overflow-wrap: anywhere;
 }
 
 footer a {
     padding: 5px;
+}
+
+.email button {
+    background-color: unset;
+    border-style: none;
+}
+
+.email button i {
+    font-size: 20px;
+    padding: 3px;
+    color: white;
+    border-radius: 7px;
+    transition: all ease 0.3s;
+}
+
+.email button:hover i {
+    cursor: pointer;
+    color: #e5bb8c;
 }
 
 .bi-instagram, .bi-facebook {
@@ -30,9 +49,15 @@ footer a {
     font-size: 23px;
 }
 
-.datos-contacto {
+.footer-info {
     display: flex;
     flex-direction: column;
+    gap: 5px;
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 10px;
 }

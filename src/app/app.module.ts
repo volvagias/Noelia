@@ -18,6 +18,7 @@ import { AreasComponent } from './components/areas/areas.component';
 
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { WhatsappComponent } from './components/whatsapp/whatsapp.component';
+import { ClipboardModule } from '@angular/cdk/clipboard';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { WhatsappComponent } from './components/whatsapp/whatsapp.component';
     AppRoutingModule,
     MatIconModule,
     ReactiveFormsModule,
-    SweetAlert2Module
+    SweetAlert2Module,
+    ClipboardModule
   ],
   providers: [
     provideClientHydration(),
