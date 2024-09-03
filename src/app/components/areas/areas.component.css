@@ -73,7 +73,6 @@ p {
     padding: 35px;
     border-radius: 6px;
     background-color: white;
-    border: 1px solid black;
 
     z-index: 1;
     position: relative;
@@ -104,6 +103,25 @@ p {
 .btn-ctn button:hover {
     color: white;
     background-color: #2f3647;
+}
+
+.back-rotate {
+    transition-delay: 0.1s;
+    transform: rotateY(180deg);
+    opacity: 1;
+    transition: opacity 0.1s;
+}
+
+.front-rotate {
+    transition-delay: 0.1s;
+    transform: rotateY(180deg);
+    opacity: 0;
+    transition: opacity 0.1s;
+    z-index: 1!important;
+}
+
+.flipped {
+    transform: rotateY(180deg);
 }
 
 @media (max-width: 700px) {
