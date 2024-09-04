@@ -18,6 +18,13 @@ h2 {
 ::ng-deep .img-ctn img {
     max-width: 275px;
     max-height: 170px;
+    border-radius: 6px;
+    filter: grayscale(100%); /* Convierte la imagen a blanco y negro */
+    transition: filter 0.3s ease;
+}
+
+::ng-deep .card-front:hover img {
+    filter: none;
 }
 
 p {
@@ -207,5 +214,9 @@ ul::-webkit-scrollbar-thumb {
 @media (max-width: 700px) {
     .ctn {
         padding: 0 0 50px 0;
+    }
+
+    ::ng-deep .img-ctn img {
+        filter: none; 
     }
 }
