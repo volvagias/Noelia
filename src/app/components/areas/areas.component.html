@@ -8,19 +8,18 @@
 
         <div class="card-front" [ngClass]="{'front-rotate': flippedIndex === i}">
             <h2>{{ area.title }}</h2>
-            <p>{{ area.description }}</p>
-            <div class="btn-ctn">
-                <button (click)="toggleCard(i)">Ver más</button>
+            <p></p>
+            <div class="btn-ctn-front">
+                <button (click)="toggleCard(i)">Información</button>
             </div>
         </div>
     
         <div class="card-back" [ngClass]="{'back-rotate': flippedIndex === i}">
-            <h2>lalalalala</h2>
-            <p>
-                ATRAS
-            </p>
-            <div class="btn-ctn">
-                <button (click)="toggleCard(i)">Ver más</button>
+            <h2>{{ area.title }}</h2>
+            <ul [innerHTML]="area.description"></ul>
+            <div class="btn-ctn-back">
+                <button (click)="toggleCard(i)">Volver</button>
+                <button title="Más información">Ver más</button>
             </div>
         </div>
         
