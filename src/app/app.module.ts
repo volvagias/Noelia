@@ -17,6 +17,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { AreasComponent } from './components/areas/areas.component';
 
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+import { WhatsappComponent } from './components/whatsapp/whatsapp.component';
+import { ClipboardModule } from '@angular/cdk/clipboard';
 
 @NgModule({
   declarations: [
@@ -28,14 +30,16 @@ import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
     ContactComponent,
     SendEmailComponent,
     CarouselComponent,
-    AreasComponent
+    AreasComponent,
+    WhatsappComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
     ReactiveFormsModule,
-    SweetAlert2Module
+    SweetAlert2Module,
+    ClipboardModule
   ],
   providers: [
     provideClientHydration(),

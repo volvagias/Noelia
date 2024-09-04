@@ -4,76 +4,26 @@
 
 <div class="ctn">
 
-    <div class="card">
-        <h2>Derecho Administrativo</h2>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            In quos laboriosam ratione animi, hic perferendis ex reprehenderit 
-        </p>
-        <div class="btn-ctn">
-            <button>Ver más</button>
-        </div>
-    </div>
+    <div class="cards" *ngFor="let area of areas; let i = index" [ngClass]="{ 'flipped': flippedIndex === i }">
 
-    <div class="card">
-        <h2>Accidentes de Tránsito</h2>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            In quos laboriosam ratione animi, hic perferendis ex reprehenderit 
-        </p>
-        <div class="btn-ctn">
-            <button>Ver más</button>
+        <div class="card-front" [ngClass]="{'front-rotate': flippedIndex === i}">
+            <h2>{{ area.title }}</h2>
+            <p></p>
+            <div class="btn-ctn-front">
+                <button (click)="toggleCard(i)">Información</button>
+            </div>
         </div>
-    </div>
-
-    <div class="card">
-        <h2>Derecho Administrativo</h2>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            In quos laboriosam ratione animi, hic perferendis ex reprehenderit 
-        </p>
-        <div class="btn-ctn">
-            <button>Ver más</button>
+    
+        <div class="card-back" [ngClass]="{'back-rotate': flippedIndex === i}">
+            <h2>{{ area.title }}</h2>
+            <ul [innerHTML]="area.description"></ul>
+            <div class="btn-ctn-back">
+                <button (click)="toggleCard(i)">Volver</button>
+                <button title="Más información">Ver más</button>
+            </div>
         </div>
+        
     </div>
 
 </div>
 
-<!-- Segunda línea de áreas -->
-
-<div class="ctn">
-
-    <div class="card">
-        <h2>Derecho Administrativo</h2>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            In quos laboriosam ratione animi, hic perferendis ex reprehenderit 
-        </p>
-        <div class="btn-ctn">
-            <button>Ver más</button>
-        </div>
-    </div>
-
-    <div class="card">
-        <h2>Derecho Administrativo</h2>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            In quos laboriosam ratione animi, hic perferendis ex reprehenderit 
-        </p>
-        <div class="btn-ctn">
-            <button>Ver más</button>
-        </div>
-    </div>
-
-    <div class="card">
-        <h2>Derecho Administrativo</h2>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            In quos laboriosam ratione animi, hic perferendis ex reprehenderit 
-        </p>
-        <div class="btn-ctn">
-            <button>Ver más</button>
-        </div>
-    </div>
-
-</div>

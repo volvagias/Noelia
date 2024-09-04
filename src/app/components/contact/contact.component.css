@@ -122,6 +122,7 @@ form p {
         align-items: center;
         height: unset;
         gap: 13px;
+        margin-top: 10px;
     } 
 
     form {
