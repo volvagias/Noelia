@@ -13,6 +13,7 @@ export class AreasComponent {
     {
       id: 1,
       title: "Derecho Penal",
+      image: `<img src="../assets/img/penal.jpg" alt="Derecho Penal">`,
       description: `
           <li><span>&#8226;</span>Querellas y Denuncias</li>
           <li><span>&#8226;</span>Perimetrales</li>
@@ -32,6 +33,7 @@ export class AreasComponent {
     {
       id: 2,
       title: "Derecho de Familia",
+      image: `<img src="../assets/img/familia.jpg" alt="Derecho de Familia">`,
       description: `
           <li><span>&#8226;</span>Alimentos / incumplimientos de cuota alimentaria</li>
           <li><span>&#8226;</span>Sucesiones</li>
@@ -49,6 +51,7 @@ export class AreasComponent {
     {
       id: 3,
       title: "Derecho Previsional",
+      image: `<img src="../assets/img/previsional.jpg" alt="Derecho Previsional">`,
       description: `
           <li><span>&#8226;</span>Jubilaciones ordinarias</li>
           <li><span>&#8226;</span>Reconocimiento de servicios</li>
@@ -65,6 +68,7 @@ export class AreasComponent {
     {
       id: 4,
       title: "Amparos de Salud",
+      image: `<img src="../assets/img/salud.jpg" alt="Amparos de Salud">`,
       description: `
           <li><span>&#8226;</span>Negativa de cobertura de prestaciones médicas: tratamientos, intervenciones quirúrgicas, prótesis.</li>
           <li><span>&#8226;</span>Negativa de cobertura del 100% de medicación en tratamientos de fertilización asistida, discapacidad, diabetes, oncología, entre otras.</li>
@@ -77,6 +81,7 @@ export class AreasComponent {
     {
       id: 5,
       title: "Derecho Laboral",
+      image: `<img src="../assets/img/laboral.jpg" alt="Derecho Laboral">`,
       description: `
           <li><span>&#8226;</span>Despidos</li>
           <li><span>&#8226;</span>Trabajo clandestino</li>
@@ -90,6 +95,7 @@ export class AreasComponent {
     {
       id: 6,
       title: "Accidentes de Tránsito y Laborales",
+      image: `<img src="../assets/img/transito.jpg" alt="Accidentes de Tránsito y Laborales">`,
       description: `
           <li><span>&#8226;</span>Etapa extrajudicial</li>
           <li><span>&#8226;</span>Mediación</li>

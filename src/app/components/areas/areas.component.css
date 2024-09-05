@@ -9,6 +9,24 @@ h2 {
     font-family: 'Georgia', serif;
 }
 
+.img-ctn {
+    display: flex;
+    justify-content: center;
+    padding: 11px 5px 11px 5px;
+}
+
+::ng-deep .img-ctn img {
+    max-width: 275px;
+    max-height: 170px;
+    border-radius: 6px;
+    filter: grayscale(100%); /* Convierte la imagen a blanco y negro */
+    transition: filter 0.3s ease;
+}
+
+::ng-deep .card-front:hover img {
+    filter: none;
+}
+
 p {
     margin: 0;
     overflow: auto;
@@ -74,7 +92,7 @@ ul {
     justify-content: space-between;
     width: 350px;
     height: 300px;
-    padding: 25px 18px 25px 18px;
+    padding: 18px 18px 18px 18px;
     border-radius: 6px;
     background-color: white;
 
@@ -90,7 +108,7 @@ ul {
     justify-content: space-between;
     width: 350px;
     height: 300px;
-    padding: 25px 18px 25px 18px;
+    padding: 18px 18px 18px 18px;
     border-radius: 6px;
     background-color: white;
 
@@ -196,5 +214,9 @@ ul::-webkit-scrollbar-thumb {
 @media (max-width: 700px) {
     .ctn {
         padding: 0 0 50px 0;
+    }
+
+    ::ng-deep .img-ctn img {
+        filter: none; 
     }
 }
