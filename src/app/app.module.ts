@@ -19,6 +19,7 @@ import { AreasComponent } from './components/areas/areas.component';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { WhatsappComponent } from './components/whatsapp/whatsapp.component';
 import { ClipboardModule } from '@angular/cdk/clipboard';
+import { AreasPageComponent } from './pages/areas-page/areas-page.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ClipboardModule } from '@angular/cdk/clipboard';
     SendEmailComponent,
     CarouselComponent,
     AreasComponent,
-    WhatsappComponent
+    WhatsappComponent,
+    AreasPageComponent
   ],
   imports: [
     BrowserModule,
