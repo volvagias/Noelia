@@ -12,7 +12,7 @@ export class HeaderComponent {
 
   navigateToSendEmail(): void {
     // Navegar a una ruta dentro de HomeComponent que no incluya app-contact
-    this.router.navigate(['/app-send-email']);
+    this.router.navigate(['/abogado-congreso-balvanera']);
   }
 
 }
