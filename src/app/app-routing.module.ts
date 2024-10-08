@@ -14,8 +14,8 @@ const routes: Routes = [
     // ]
   },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'app-send-email', component: SendEmailComponent },
-  { path: 'app-areas-page', component: AreasPageComponent }
+  { path: 'abogado-congreso-balvanera', component: SendEmailComponent },
+  { path: 'derecho-civil-caba', component: AreasPageComponent }
   // Otras rutas principales aquí
 ];
 
