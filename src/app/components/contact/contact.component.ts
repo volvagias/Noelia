@@ -72,7 +72,7 @@ export class ContactComponent {
       });
 
       emailjs.init('94i5NU6N3xpeSwrO0'); // Inicializa emailjs con tu usuario ID
-      let response = await emailjs.send("service_evsmi8f","template_h343t1r",{   // Espera la respuesta de emailjs.send
+      let response = await emailjs.send("service_evsmi8f","template_ip4tsx7",{   // Espera la respuesta de emailjs.send
         name: this.form.value.name,
         email: this.form.value.email,
         phone: this.form.value.phone,
