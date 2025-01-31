@@ -108,6 +108,18 @@ export class AreasComponent {
           <li><span>&#8226;</span>Comisiones Médicas</li>
           <li><span>&#8226;</span>Reclamo Judicial</li>
         `
+    },
+    {
+      id: 6,
+      title: "Gestión de Visas y Ciudadanías",
+      image: `<img src="../assets/img/transito.jpg" alt="Accidentes de Tránsito y Laborales">`,
+      description: `
+          <li><span>&#8226;</span>Armado de carpetas</li>
+          <li><span>&#8226;</span>Búsqueda de partidas</li>
+          <li><span>&#8226;</span>Certificaciones</li>
+          <li><span>&#8226;</span>Análisis de viabilidad</li>
+          <li><span>&#8226;</span>Investigación genealógica</li>
+        `
     }
   ];
 
