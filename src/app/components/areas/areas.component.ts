@@ -18,7 +18,7 @@ export class AreasComponent {
           <li><span>&#8226;</span>Querellas y Denuncias</li>
           <li><span>&#8226;</span>Perimetrales</li>
           <li><span>&#8226;</span>Defensas Penales</li>
-          <li><span>&#8226;</span>Excarcelación, Excención, Morigeración</li>
+          <li><span>&#8226;</span>Excarcelación, Exención, Morigeración</li>
           <li><span>&#8226;</span>Abuso sexual</li>
           <li><span>&#8226;</span>Homicidios</li>
           <li><span>&#8226;</span>Lesiones</li>
