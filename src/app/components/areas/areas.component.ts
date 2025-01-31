@@ -112,7 +112,7 @@ export class AreasComponent {
     {
       id: 6,
       title: "Gestión de Visas y Ciudadanías",
-      image: `<img src="../assets/img/transito.jpg" alt="Accidentes de Tránsito y Laborales">`,
+      image: `<img src="../assets/img/pasaporte.png" alt="Accidentes de Tránsito y Laborales">`,
       description: `
           <li><span>&#8226;</span>Armado de carpetas</li>
           <li><span>&#8226;</span>Búsqueda de partidas</li>
